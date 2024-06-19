@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+}
+.vertical-nav{
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+.page-content{
+    width: calc(100% -17rem);
+    margin-left: 17rem;
+    transition: all 0.4s ;
+}
+#sidebar.active{
+    margin-left: -17rem;
+}
+#content.active{
+    width: 100%;
+    margin: 0;
+}
+.separator{
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+
+}
+.text-uppercase{
+    letter-spacing: 0.1em;
+}
+
+.text-gery{
+    color: #aaa;
+
+}
+.nav-link{
+    text-transform: capitalize;
+}
+.nav-link:hover{
+    background: #f3f2f2;
+
+}
+.text-primary{
+    color: #7579e7 !important;
+}
+@media(max-width:768px){
+    #sidebar{
+    margin-left: -17rem;
+}
+#sidebar.active{
+    margin-left: 0;
+}
+#content{
+    width: 100%;
+    margin: 0;
+}
+#content.active{
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+}
+}
+
+.bbb{
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0 , 0.07);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 5px solid rgba(0, 0, 0 , 0.07);
+    -webkit-transition: all 0.5s ease 0s;
+    transition:  all 0.5s ease 0s;
+    margin-left: 10px;
+
+}
+.ccc{
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0 , 0.07);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 5px solid rgba(0, 0, 0 , 0.07);
+    -webkit-transition: all 0.5s ease 0s;
+    transition:  all 0.5s ease 0s;
+    margin-left: 100px;
+
+
+}
+.aaa{
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0 , 0.07);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 5px solid rgba(0, 0, 0 , 0.07);
+    -webkit-transition: all 0.5s ease 0s;
+    transition:  all 0.5s ease 0s;
+    margin-left: 10px;
+
+}
+
+
